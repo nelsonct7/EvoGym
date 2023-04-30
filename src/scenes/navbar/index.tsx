@@ -12,7 +12,7 @@ interface Props {
   isTopOfPage: boolean;
 }
 
-const index = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
+const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
@@ -107,4 +107,4 @@ const index = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
   );
 };
 
-export default index;
+export default Navbar;
